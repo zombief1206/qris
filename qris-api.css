@@ -1,0 +1,196 @@
+/*
+  TTTTT  III  GGG   EEEEE  RRRR     DDDD   EEEEE  V   V  SSSS
+    T     I   G      E      R   R    D   D  E      V   V  S
+    T     I   G  GG  EEEE   RRRR     D   D  EEEE   V   V  SSS
+    T     I   G   G  E      R  R     D   D  E      V   V     S
+    T    III  GGGG   EEEEE  R   R    DDDD   EEEEE  VVV   SSSS
+
+               QRIS API IDNTOTO TIGER_DEVS X PRESTIGE v.1
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.tigerp-qris-wrapper {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  color: #fff;
+  background: #262626;
+  font-family: "Poppins";
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.tigerp-qris-wrapper input {
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+.tigerp-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tigerp-border-red {
+  border-color: red;
+}
+
+.tigerp-qris-wrapper button {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #469c15;
+}
+
+.tigerp-notice {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.8rem 0.5rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.tigerp-danger-notice {
+  background: #ffecec;
+  border: 1px solid #9a0000;
+  color: #9a0000;
+}
+
+.tigerp-info-notice {
+  background: #ecfaff;
+  border: 1px solid #00629a;
+  color: #006c9a;
+}
+
+.tigerp-success-notice {
+  background: #f3ffec;
+  border: 1px solid #2c9a00;
+  color: #1a9a00;
+}
+
+.tigerp-warning-notice {
+  background: #fffcec;
+  border: 1px solid #9a8000;
+  color: #9a8500;
+}
+
+.tigerp-logo-qris {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.7rem;
+}
+
+.tigerp-desc-total {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tigerp-desc-total div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tigerp-loading-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.tigerp-qris-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tigerp-qris-image-wrapper p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.tigerp-qris-image {
+  max-width: 90%;
+}
+
+.tigerp-loader {
+  width: 15px;
+  height: 15px;
+  border: 3px solid;
+  border-top: 3px solid #9a8000;
+  border-radius: 50%;
+  animation: tigerp-spin 1s linear infinite;
+}
+
+@keyframes tigerp-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cstmnewqris {
+  border-radius: 5px;
+  padding: 1rem;
+  color: #000;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  animation: bgChangeQris 2s infinite alternate ease-in-out;
+}
+
+.qrisimgBaru {
+  max-width: 100%;
+  animation: attentionShake 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes attentionShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bgChangeQris {
+  0% {
+    background-color: #00f5f6;
+  }
+  50% {
+    background-color: #00c8c9;
+  }
+  100% {
+    background-color: #00f5f6;
+  }
+}
