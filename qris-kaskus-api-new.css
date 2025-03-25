@@ -24,7 +24,7 @@
   padding: 0.5rem;
   border-radius: 0.4rem;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   box-sizing: border-box;
 }
 
@@ -42,7 +42,7 @@
   width: 100%;
   border: none;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 0.7rem;
   font-weight: 600;
   color: #ffffff;
@@ -56,6 +56,10 @@
   margin-top: 0.7rem;
   margin-bottom: 0.7rem;
   border-radius: 0.5rem;
+}
+
+.tigerp-notice p {
+ font-size: 1.2rem !important;
 }
 
 .tigerp-danger-notice {
